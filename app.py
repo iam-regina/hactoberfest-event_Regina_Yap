@@ -46,7 +46,16 @@ while True:
       feelings_list.append("mad")
       encouragement_list.append("Calm down and think of something that makes you happy!")
       counter += 1 
-
+      
+     if each_word == "depressed":
+      feelings_list.append("depressed")
+      encouragement_list.append("Sometimes, it's okay not to be okay and you will inevitably feel down in the dumps sometimes. However, it is not okay to stay that way! Maybe you can tell someone about it?")
+      counter += 1 
+      
+     if each_word == "fearful":
+      feelings_list.append("fearful")
+      encouragement_list.append("what are you fearful of? remember, you are better than what you think you are and you can overcome anything you put your mind to! you can do it!")
+      counter += 1 
       
     if counter == 0:
 
