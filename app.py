@@ -13,7 +13,7 @@ print("You’ve lived for more than " + str(age_in_days) + " days!")
 time.sleep(1)
 print("Amazing!  You are really fortunate.")
 time.sleep(1)
-print("Oh! I forgot to introduce myself! Stupid me.")
+print("Oh! I forgot to introduce myself! Silly me.")
 time.sleep(3)
 print("I am Somebot! An interactive robot!  I apologise beforehand that i may not be that able to understand you as I am still work in progress.") 
 time.sleep(4)
@@ -146,14 +146,22 @@ print("Pencils confused him. 2B or not 2B?")
 time.sleep(3)
 print("HAHAHAHAHAH i hope you got the joke! :)")
 time.sleep(3)
-choice= input("do you want another one?")
+choice = input("do you want another one?")
 joke = 1
 while joke == 1:
-  if choice =="yes" or "ok" or "okay":
+  if choice == "yes" or "ok" or "okay":
     print("why are fish so smart?")
     time.sleep(5)
     print("they live in schools HAHAHAHAHAHA")
     joke = 2
     print("It was nice talking to you " + name + ", bye!!!")
   else:
-    print("It was nice talking to you " + name + ", bye!!!")
+    choice = input("Ok then, how about a riddle?")
+    if choice == "yes" or "ok" or "okay":
+      print("Mary's father has four daughters. September is reading a book. Heralda is playing chess. Jane is jogging in the park. Mary is at home. What is she doing?")
+      time.sleep(10)
+      print("She is playing chess with Heralda! Get it?")
+      print("It was nice talking to you " + name + ", bye!!!")
+    else:
+      print("Oh alright, remember to always smile and be happy!")
+      print("It was nice talking to you " + name + ", bye!!!")
