@@ -84,7 +84,12 @@ while encouragement == True:
     if each_word == "angry" or "indignant" or "outraged" or "fuming" or "enraged":
       encouragement_list.append(" Oh dear... you must be really upset!  Try this short breathing exercise with me.")
       counter = 2
-
+    
+    if each_word =="mixed" or "I don't know" or "confused" :
+      encouragement_list.append(" Try talking to your friends to feel better to understand yourself.")
+      counter = 1
+    
+    
     if counter == 0:
     
       output = " Sorry I don't really understand. Please use different words?"
